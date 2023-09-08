@@ -1,6 +1,6 @@
 
 # Defang Extension
-![Water Image](images/Water.png)
+![Water Image](images/Water.jpg)
 
 
 Defang Extension Logo
