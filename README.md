@@ -31,7 +31,7 @@ The Defang Extension is a browser extension designed to enhance your web browsin
 
 1.  **Download the Extension**:
     
-    -   Visit the [GitHub Repository](https://github.com/your-username/defang-extension).
+    -   Visit the [GitHub Repository]([https://github.com/your-username/defang-extension](https://github.com/ashizZz/Defang/tree/main)).
     -   Click the "Code" button and select "Download ZIP" to download the extension's ZIP file.
 2.  **Install in Developer Mode**:
     
