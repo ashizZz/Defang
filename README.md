@@ -19,8 +19,8 @@ The Defang Extension is a browser extension designed to enhance your web browsin
 
 **Supported Browsers**
  1. Google Chrome 
- 2. Mozilla Firefox 
- 3. Microsoft Edge
+ 2. Mozilla Firefox  (Coming Soon)
+ 3. Microsoft Edge  (Coming Soon)
 
 ## Installation Steps
 
@@ -44,10 +44,6 @@ The Defang Extension is a browser extension designed to enhance your web browsin
 3.  **Usage**:
     
     -   The extension runs automatically in the background. Simply select any text that appears to be an IP address or URL, and the extension will defang it for you.
-
-#### Other Browsers (Coming Soon)
-
-Stay tuned for updates! We are actively working on bringing the Defang Extension to other browsers. Support for additional browsers, including Mozilla Firefox and Microsoft Edge, is coming soon.
 
 #### Web Store (Coming Soon)
 
