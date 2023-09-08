@@ -1,9 +1,7 @@
 
 # Defang Extension
-![Water Image](images/Water.jpg)
+![Defang IP and URL](images/Water.jpg)
 
-
-Defang Extension Logo
 
 ## Overview
 
