@@ -24,7 +24,7 @@ document.addEventListener('selectionchange', function () {
 
   if (!selectedText) {
     // No text is selected, close the current overlay if any
-    if (currentOverlay) {
+    if (currentOverlay && currentOverlay.parentNode === document.body) {
       document.body.removeChild(currentOverlay);
       currentOverlay = null;
     }
@@ -38,8 +38,13 @@ document.addEventListener('selectionchange', function () {
 
   if (isUrlOrIp) {
     // Get the selection range to position the overlay
-    const selection = window.getSelection().getRangeAt(0);
-    const rect = selection.getBoundingClientRect();
+    const selection = window.getSelection();
+    const range = selection.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+
+    // Calculate the position based on the selection
+    const overlayTop = rect.bottom + window.scrollY;
+    const overlayLeft = rect.left + window.scrollX;
 
     // Defang the selected text
     const defangedText = defangUrlAndIp(selectedText);
@@ -50,8 +55,8 @@ document.addEventListener('selectionchange', function () {
 
     // Apply styles to the overlay
     overlay.style.position = 'absolute';
-    overlay.style.top = `${rect.bottom + window.scrollY}px`;
-    overlay.style.left = `${rect.left + window.scrollX}px`;
+    overlay.style.top = `${overlayTop}px`;
+    overlay.style.left = `${overlayLeft}px`;
     overlay.style.fontSize = '16px';
     overlay.style.color = '#fff'; /* Text color (white) */
     overlay.style.background = 'linear-gradient(to bottom, #282424, #282424)'; /* Gradient background from black to white */
@@ -69,22 +74,26 @@ document.addEventListener('selectionchange', function () {
       console.log('Copied to clipboard');
       // Close the overlay after a short delay (e.g., 2 seconds)
       setTimeout(function () {
-        document.body.removeChild(overlay);
-        currentOverlay = null;
+        if (overlay.parentNode === document.body) {
+          document.body.removeChild(overlay);
+          currentOverlay = null;
+        }
       }, 2000); // Adjust the delay as needed
     }).catch(function (err) {
       // Clipboard copy failed
       console.error('Failed to copy to clipboard: ', err);
       // Close the overlay immediately in case of an error
-      document.body.removeChild(overlay);
-      currentOverlay = null;
+      if (overlay.parentNode === document.body) {
+        document.body.removeChild(overlay);
+        currentOverlay = null;
+      }
     });
 
     // Append the defanged text to the overlay
     overlay.textContent = defangedText;
 
     // Close the currently open overlay (if any)
-    if (currentOverlay) {
+    if (currentOverlay && currentOverlay.parentNode === document.body) {
       document.body.removeChild(currentOverlay);
     }
 
