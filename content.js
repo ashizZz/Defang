@@ -1,16 +1,16 @@
 // Function to defang a URL or IP
 function defangUrlAndIp(input) {
-  // Replace "https://" with "hxxps[://]"
+
   input = input.replace(/https:\/\//g, 'hxxps[://]');
 
-  // Replace "http://" with "hxxp[://]"
+=
   input = input.replace(/http:\/\//g, 'hxxp[://]');
 
-  // Replace dots with square brackets
+  
   input = input.replace(/\./g, '[.]');
 
-  // Implement your additional defanging logic here if needed
-  // For example, you can replace other characters as required
+  // Iadditional defanging logic
+  
 
   // Return the defanged text
   return input;
