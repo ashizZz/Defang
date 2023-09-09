@@ -5,7 +5,7 @@
 
 ## Overview
 
-The Defang Extension is a browser extension designed to enhance your web browsing experience by automatically defanging (i.e., making safe to display or use) IP addresses and URLs that you encounter while browsing the web. It simplifies the process of safely interacting with potentially harmful or sensitive links.
+The Defang Extension enhances your web browsing by automatically defanging IP addresses and URLs, making interactions secure and enabling effortless inclusion of these links in reports or for sharing.
 
 ## Features
 
