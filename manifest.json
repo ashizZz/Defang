@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Defang IP and URL",
   "version": "1.0",
-  "description": "Double-click on URLs or IPs to defang within an overlay.",
+  "description": "Select an IP address or URL to defang.",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
