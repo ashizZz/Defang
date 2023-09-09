@@ -65,11 +65,3 @@ We welcome contributions from the open-source community! If you want to contribu
 5.  Push your changes to your forked repository: `git push origin feature/your-feature-name`.
 6.  Create a pull request (PR) to the original repository, describing your changes and their purpose.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/LICENSE) file for details.
-
-## Contact
-
-If you have any questions, issues, or suggestions, please feel free to contact via [support@example.com](javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')).
-
