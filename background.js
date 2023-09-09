@@ -11,9 +11,5 @@ function defangInContentScript(selectedText) {
 }
 
 function sendDefangedTextToContent(defangedText) {
-  // Modify this function to handle the defangedText in your content script
-  // For example, you can display an overlay or take any other desired action
-  // This function will be executed in the context of the content script
-  // You can access the defangedText variable here
-  console.log(defangedText); // Example: Log the defanged text to the console
-}
+  
+  console.log(defangedText); 
