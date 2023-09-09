@@ -43,7 +43,12 @@ The Defang Extension is a browser extension designed to enhance your web browsin
     -   Select the folder where you extracted the extension files and click "Open."
 3.  **Usage**:
     
-    -   The extension runs automatically in the background. Simply select any text that appears to be an IP address or URL, and the extension will defang it for you.
+    -   The extension runs automatically in the background. Simply select any text that appears to be an IP address or URL, and the extension will defang it for you while also automatically copying it to the clipboard.
+      
+ ![URL](images/Url.png)
+
+
+ ![IP Address ](images/IPAdress.png)
 
 #### Web Store (Coming Soon)
 
@@ -66,5 +71,5 @@ This project is licensed under the MIT License - see the [LICENSE](https://chat.
 
 ## Contact
 
-If you have any questions, issues, or suggestions, please feel free to contact us at [support@example.com](mailto:support@example.com).
+If you have any questions, issues, or suggestions, please feel free to contact via [support@example.com](javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')).
 
